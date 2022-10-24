@@ -1,0 +1,4 @@
+echo "<pre>";
+print_r($obRouter);
+echo "</pre>";
+exit; 
