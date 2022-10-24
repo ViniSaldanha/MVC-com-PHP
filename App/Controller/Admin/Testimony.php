@@ -1,6 +1,10 @@
 <?php
 
+
+
 namespace App\Controller\Admin;
+
+
 
 use \App\Utils\View;
 use \App\Model\Entity\Testimony as EntityTestimony;
@@ -53,19 +57,17 @@ class Testimony extends Page{
     public static function getNewTestimony($request){
 
         //ler o csv;
-        $dadosCSV = CSV::lerArquivo(__DIR__.'/files/teste-importacao.csv', true, ';');
-        //$dadosCSV = "";
+        $dados = CSV::lerArquivo(__DIR__.'/files/teste-importacao.csv', true, ';');
 
-        //echo "<pre>";
-        //print_r($dadosCSV);
-        //echo "</pre>"; exit;
+        
 
         $content = View::render('admin/modules/testimonies/form',[
+            
             'title'     => 'Cadastrar BA',
             'nome'      => '',
             'mensagem'  => '',
             'status'    => '',
-            'dadosCVS'  => $dadosCSV
+            'dados'  => $dados
            
         ]);
 
