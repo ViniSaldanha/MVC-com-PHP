@@ -1,31 +1,35 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Third navbar example">
-  <div class="container">
-    <a class="navbar-brand" href="#">Icomon</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<header class="p-3 mb-3 border-bottom">
+	<div class="container">
+		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+			<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+				<img src="/resources/images/logo.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+			</a>
 
-    <div class="collapse navbar-collapse" id="navbarsExample03">
-      <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{URL}}"><button type="button" class="btn btn-outline-primary">Inicio</button></a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><button type="button" class="btn btn-outline-primary">Sobre BA97</button></a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown03">
-            <li><a class="dropdown-item" href="cadastrar-ba">Cadastrar  BA97</a></li>
-            <li><a class="dropdown-item" href="preencher-ba">Preencher  BA97</a></li>
-            <li><a class="dropdown-item" href="visualizar-ba">Visualizar BA97</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{URL}}/sobre"><button type="button" class="btn btn-outline-primary">Sobre</button></a>
-        </li>
-      </ul>
-      <form>
-        <button type="button" class="btn btn-secondary">Usuario</button>
-        <button type="button" class="btn btn-dark">Sair</button>
-      </form>
-    </div>
-  </div>
-</nav>
+			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+				<li><a href="#" class="nav-link px-2 link-dark">Cadastros</a></li>
+				<li><a href="#" class="nav-link px-2 link-dark">Eventos</a></li>
+				<li><a href="#" class="nav-link px-2 link-dark">Relatórios</a></li>
+			</ul>
+
+			<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+				<input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+			</form>
+
+			<div class="dropdown text-end">
+				<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+					aria-expanded="false">
+					<img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+				</a>
+				<ul class="dropdown-menu text-small">
+					<li><a class="dropdown-item" href="#">New project...</a></li>
+					<li><a class="dropdown-item" href="#">Settings</a></li>
+					<li><a class="dropdown-item" href="#">Profile</a></li>
+					<li>
+						<hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="#">Sign out</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
