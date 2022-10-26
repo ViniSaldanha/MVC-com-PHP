@@ -10,6 +10,10 @@ class Page {
         return View::render('pages/header');
     }
 
+    private static function getMenu(){
+        return View::render('pages/menu');
+    }
+
     private static function getFooter(){
         return View::render('pages/footer');
     }
@@ -46,6 +50,7 @@ class Page {
         return View::render('pages/page', [
             'title' => $title,
             'header' => self::getHeader(),
+            'menu'   => self::getMenu(),
             'content' => $content,
             'footer' => self::getFooter()
         ]);
